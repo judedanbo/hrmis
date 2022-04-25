@@ -44,6 +44,14 @@ const showingNavigationDropdown = ref(false);
                                 >
                                     People
                                 </BreezeNavLink>
+                                <BreezeNavLink
+                                    :href="route('unit.index')"
+                                    :active="
+                                        route().current().startsWith('unit')
+                                    "
+                                >
+                                    Units
+                                </BreezeNavLink>
                             </div>
                         </div>
 
@@ -149,9 +157,15 @@ const showingNavigationDropdown = ref(false);
                         </BreezeResponsiveNavLink>
                         <BreezeResponsiveNavLink
                             :href="route('person.index')"
-                            :active="route().current()"
+                            :active="route().current().startsWith('person')"
                         >
                             People
+                        </BreezeResponsiveNavLink>
+                        <BreezeResponsiveNavLink
+                            :href="route('unit.index')"
+                            :active="route().current().startsWith('unit')"
+                        >
+                            Units
                         </BreezeResponsiveNavLink>
                     </div>
 

@@ -2,7 +2,8 @@
     <div>
         <Component
             :is="link.url ? 'Link' : 'span'"
-            v-for="link in links"
+            v-for="(link, index) in links"
+            :key="index"
             :href="link.url"
             v-html="link.label"
             class="px-1 justify-between"

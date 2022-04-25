@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\MinistryController;
 use App\Http\Controllers\PersonController;
+use App\Http\Controllers\DepartmentController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -32,6 +34,16 @@ Route::get('/dashboard', function () {
 Route::controller(PersonController::class)->group(function() {
     Route::get('/person', 'index')->name('person.index');
     Route::get('/person/{person}', 'show')->name('person.show');
+});
+
+Route::controller(MinistryController::class)->group(function() {
+    Route::get('/institution', 'index')->name('institution.index');
+    Route::get('/institution/{ministry}', 'show')->name('institution.show');
+});
+
+Route::controller(DepartmentController::class)->group(function() {
+    Route::get('/unit', 'index')->name('unit.index');
+    Route::get('/unit/{unit}', 'show')->name('unit.show');
 });
 
 

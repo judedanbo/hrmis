@@ -107,7 +107,7 @@
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames not based on template
-/******/ 			if ({"resources_js_Pages_Auth_ConfirmPassword_vue":1,"resources_js_Pages_Auth_ForgotPassword_vue":1,"resources_js_Pages_Auth_Login_vue":1,"resources_js_Pages_Auth_Register_vue":1,"resources_js_Pages_Auth_ResetPassword_vue":1,"resources_js_Pages_Auth_VerifyEmail_vue":1,"resources_js_Pages_Dashboard_vue":1,"resources_js_Pages_Person_Index_vue":1,"resources_js_Pages_Person_Show_vue":1,"resources_js_Pages_Welcome_vue":1}[chunkId]) return "js/" + chunkId + ".js";
+/******/ 			if ({"resources_js_Pages_Auth_ConfirmPassword_vue":1,"resources_js_Pages_Auth_ForgotPassword_vue":1,"resources_js_Pages_Auth_Login_vue":1,"resources_js_Pages_Auth_Register_vue":1,"resources_js_Pages_Auth_ResetPassword_vue":1,"resources_js_Pages_Auth_VerifyEmail_vue":1,"resources_js_Pages_Dashboard_vue":1,"resources_js_Pages_Institution_Index_vue":1,"resources_js_Pages_Institution_Show_vue":1,"resources_js_Pages_Person_Index_vue":1,"resources_js_Pages_Person_Show_vue":1,"resources_js_Pages_Staff_Index_vue":1,"resources_js_Pages_Staff_Show_vue":1,"resources_js_Pages_Unit_Index_vue":1,"resources_js_Pages_Unit_Show_vue":1,"resources_js_Pages_Welcome_vue":1}[chunkId]) return "js/" + chunkId + ".js";
 /******/ 			// return url for filenames based on template
 /******/ 			return undefined;
 /******/ 		};

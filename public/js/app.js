@@ -167,6 +167,16 @@ var map = {
 		"/js/vendor",
 		"resources_js_Pages_Dashboard_vue"
 	],
+	"./Institution/Index.vue": [
+		"./resources/js/Pages/Institution/Index.vue",
+		"/js/vendor",
+		"resources_js_Pages_Institution_Index_vue"
+	],
+	"./Institution/Show.vue": [
+		"./resources/js/Pages/Institution/Show.vue",
+		"/js/vendor",
+		"resources_js_Pages_Institution_Show_vue"
+	],
 	"./Person/Index.vue": [
 		"./resources/js/Pages/Person/Index.vue",
 		"/js/vendor",
@@ -176,6 +186,26 @@ var map = {
 		"./resources/js/Pages/Person/Show.vue",
 		"/js/vendor",
 		"resources_js_Pages_Person_Show_vue"
+	],
+	"./Staff/Index.vue": [
+		"./resources/js/Pages/Staff/Index.vue",
+		"/js/vendor",
+		"resources_js_Pages_Staff_Index_vue"
+	],
+	"./Staff/Show.vue": [
+		"./resources/js/Pages/Staff/Show.vue",
+		"/js/vendor",
+		"resources_js_Pages_Staff_Show_vue"
+	],
+	"./Unit/Index.vue": [
+		"./resources/js/Pages/Unit/Index.vue",
+		"/js/vendor",
+		"resources_js_Pages_Unit_Index_vue"
+	],
+	"./Unit/Show.vue": [
+		"./resources/js/Pages/Unit/Show.vue",
+		"/js/vendor",
+		"resources_js_Pages_Unit_Show_vue"
 	],
 	"./Welcome.vue": [
 		"./resources/js/Pages/Welcome.vue",

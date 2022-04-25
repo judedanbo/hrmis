@@ -29,6 +29,7 @@ class PersonController extends Controller
                                 $query->orWhere('social_security_number', 'like', "%{$term}%");
                             }
                         })
+                        ->orderDob()
                         ->paginate()
                         ->withQueryString()
                         ->through(fn($person) => [
@@ -38,7 +39,7 @@ class PersonController extends Controller
                             'dob' => $person ->date_of_birth,
                             'ssn' => $person ->social_security_number,
                         ]),
-                        'filters' => Request::only(['search']),
+            'filters' => Request::only(['search']),
         ]);
     }
 
